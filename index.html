@@ -382,6 +382,20 @@ document.oncontextmenu = () => {
         alert("Open admin only on this page Sources Code");
         return false;
     }
+            // Check if Ctrl + Shift + C is pressed
+    if (e.ctrlKey && e.shiftKey && e.key.toLowerCase() === "c") {
+        alert("Open admin only on this page Sources Code");
+        e.preventDefault(); // Prevent the default action (if any)
+        return false;
+    }
+
+    // Check if Ctrl + Shift + i is pressed
+    if (e.ctrlKey && e.shiftKey && e.key.toLowerCase() === "i") {
+        alert("Open admin only on this page Sources Code");
+        e.preventDefault(); // Prevent the default action (if any)
+        return false;
+    }
+});
 };
     </script>
     
